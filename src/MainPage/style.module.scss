@@ -1,0 +1,58 @@
+.app {
+  height: 100vh;
+  background: url(./../images/backgroundImage.jpg);
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.presentationBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 50%;
+  color: #fffbfb;
+  font-size: 30px;
+  letter-spacing: 10px;
+  justify-content: center;
+}
+
+.presentationDetailJSON {
+  letter-spacing: 3px !important;
+  font-size: 10px;
+}
+
+.presentationKey {
+  color: #74ffd1;
+  font-size: 1.5vh;
+}
+.presentationValue {
+  font-size: 1.3vh;
+}
+
+.contactMe {
+  position: relative;
+  border: solid white 1px;
+  border-radius: 2px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.contactMe:hover {
+  background-color: rgba(255, 255, 255, 0.561);
+}

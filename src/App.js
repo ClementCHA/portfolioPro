@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+import SlideMenu from "./Menu/Menu.jsx";
+import MainPageContainer from "./MainPage";
+import ContactFormContainer from "./ContactForm/ContactForm.container";
+import ConvertisseurAndCo from "./Convert/convertisseurAndCo";
+import Spotify from "./Spotify";
+import Calculator from "./Calculator";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <SlideMenu />
+      <Routes>
+        <Route path="/" element={<MainPageContainer />} />
+        <Route path="/contact" element={<ContactFormContainer />} />
+        <Route path="/convertor" element={<ConvertisseurAndCo />} />
+        <Route path="/spotify" element={<Spotify />} />
+        <Route path="/calculator" element={<Calculator />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,22 @@
+.subTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imc {
+  display: flex;
+  margin: 50px 30px 0px 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

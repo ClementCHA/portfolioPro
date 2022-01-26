@@ -1,0 +1,36 @@
+.moneyConvert {
+  display: flex;
+  margin: 50px 30px 0px 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.app {
+  font-family: "Roboto Mono", monospace;
+}
+
+.subTitle {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+}
+.to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
