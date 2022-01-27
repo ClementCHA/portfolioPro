@@ -67,8 +67,8 @@ const SpotifyView = ({
       {isLoading && !areYouRespectingMe && (
         <>
           <div className={styles.respect}>
-            <p className={styles.consent}> If you click that button</p>{" "}
-            <p className={styles.consent}>
+            <p className={styles.consent}> If you click on that button</p>{" "}
+            <p className={styles.consentSec}>
               you consent having no judgement about my musical taste{" "}
             </p>
             <>
@@ -106,97 +106,119 @@ const SpotifyView = ({
       )}
       {!isLoading && (
         <div className={styles.spotifyApp}>
-          <h1 className={styles.title}> Spotify App'</h1>
-          <h2 className={styles.subtitle}>
-            {" "}
-            I listened{" "}
-            {
-              <span className={styles.resultDetails}>
-                {convert(totalTimeIListenMusic)}
-              </span>
-            }{" "}
-            of music in 2021.
-          </h2>
-          <p className={styles.taunt}> Seems I've only that to do ... </p>
-          <div className={styles.selectInput}>
-            <FormControl className={styles.input}>
-              <Select
-                value={choosenArtist}
-                onChange={handleArtistChange}
-                sx={{
-                  "&& .MuiSelect-select": {
-                    backgroundColor: "white",
-                    borderRadius: "4px",
-                  },
-                  "&& .MuiFormControl-rool": {
-                    justifyContent: "center",
-                  },
-                }}
-              >
-                {artistsSelect}
-              </Select>
-            </FormControl>
-            {choosenArtist && (
-              <a
-                href={`https://open.spotify.com/search/${choosenArtist}`}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <SpotifyIco style={{ fontSize: "90px" }} />
-              </a>
-            )}
-          </div>
-
-          {title.length > 0 && (
+          <div className={styles.content}>
+            <h1 className={styles.title}> Spotify data analysis</h1>
+            <h2 className={styles.subtitle}>
+              {" "}
+              I listened to{" "}
+              {
+                <span className={styles.resultDetails}>
+                  {convert(totalTimeIListenMusic)}
+                </span>
+              }{" "}
+              of music in 2021.
+            </h2>
+            <p className={styles.taunt}>
+              {" "}
+              (If you're wondering if I love listening to music, the answer is
+              clearly yes){" "}
+            </p>
             <div className={styles.selectInput}>
               <FormControl className={styles.input}>
                 <Select
-                  value={choosenSong}
-                  onChange={handleMusicChange}
+                  value={choosenArtist}
+                  onChange={handleArtistChange}
                   sx={{
                     "&& .MuiSelect-select": {
                       backgroundColor: "white",
                       borderRadius: "4px",
                     },
-                    "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                      border: "1px solid #484850",
-                      borderRadius: "5px 5px 0 0",
+                    "&& .MuiFormControl-rool": {
+                      justifyContent: "center",
                     },
                   }}
                 >
-                  {musicFromArtist}
+                  {artistsSelect}
                 </Select>
               </FormControl>
-              {choosenSong && (
+              {choosenArtist && (
                 <a
-                  href={`https://open.spotify.com/search/${choosenArtist}%20${choosenSong}`}
+                  href={`https://open.spotify.com/search/${choosenArtist}`}
                   rel="noreferrer"
                   target="_blank"
+                  className={styles.spotifyLogo}
                 >
-                  <SpotifyIco style={{ fontSize: "90px" }} />
+                  <SpotifyIco style={{ fontSize: "120px" }} />
                 </a>
               )}
+              {!choosenArtist && (
+                <SpotifyIco
+                  className={styles.spotifyLogoOff}
+                  style={{ fontSize: "120px" }}
+                />
+              )}
             </div>
-          )}
-          {timeIListenThisSong > 0 && (
-            <p className={styles.result}>
-              J'ai écouté{" "}
-              {<span className={styles.resultDetails}>{choosenSong}</span>} de{" "}
-              {<span className={styles.resultDetails}>{choosenArtist}</span>}{" "}
-              pendant{" "}
-              {
-                <span className={styles.resultDetails}>
-                  {convert(timeIListenThisSong)}
-                </span>
-              }{" "}
-              sur l'année 2021.
-            </p>
-          )}
-          {timeIListenThisSong === 0 && (
-            <p className={styles.result}>
-              What the hell spotify? I never listened that song the past year...
-            </p>
-          )}
+
+            {title.length > 0 && (
+              <>
+                <div className={styles.selectInput}>
+                  <FormControl className={styles.input}>
+                    <Select
+                      value={choosenSong}
+                      onChange={handleMusicChange}
+                      sx={{
+                        "&& .MuiSelect-select": {
+                          backgroundColor: "white",
+                          borderRadius: "4px",
+                        },
+                        "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
+                          border: "1px solid #484850",
+                          borderRadius: "5px 5px 0 0",
+                        },
+                      }}
+                    >
+                      {musicFromArtist}
+                    </Select>
+                  </FormControl>
+                  {choosenSong && (
+                    <a
+                      href={`https://open.spotify.com/search/${choosenArtist}%20${choosenSong}`}
+                      rel="noreferrer"
+                      target="_blank"
+                      className={styles.spotifyLogo}
+                    >
+                      <SpotifyIco style={{ fontSize: "120px" }} />
+                    </a>
+                  )}
+                  {!choosenSong && (
+                    <SpotifyIco
+                      className={styles.spotifyLogoOff}
+                      style={{ fontSize: "120px" }}
+                    />
+                  )}
+                </div>
+              </>
+            )}
+            {timeIListenThisSong > 0 && (
+              <p className={styles.result}>
+                I listened to{" "}
+                {<span className={styles.resultDetails}>{choosenSong}</span>} by{" "}
+                {<span className={styles.resultDetails}>{choosenArtist}</span>}{" "}
+                during{" "}
+                {
+                  <span className={styles.resultDetails}>
+                    {convert(timeIListenThisSong)}
+                  </span>
+                }{" "}
+                in 2021.
+              </p>
+            )}
+            {timeIListenThisSong === 0 && (
+              <p className={styles.result}>
+                What the hell spotify? I never listened that song the past year.
+              </p>
+            )}
+          </div>
         </div>
       )}
     </>

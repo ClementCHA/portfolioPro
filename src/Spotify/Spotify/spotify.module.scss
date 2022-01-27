@@ -1,9 +1,9 @@
 .selectInput {
   margin-top: 40px;
-  width: 900px;
+  margin-left: 40px;
+
   display: flex;
   align-content: center;
-  justify-content: center;
   align-items: center;
 }
 
@@ -12,12 +12,31 @@
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
+}
+
+.hideLogo {
+  margin-left: 30px;
+}
+.spotifyLogo {
+  margin-left: 30px;
+}
+.spotifyLogoOff {
+  cursor: not-allowed;
+  margin-left: 30px;
+  filter: invert(50%) sepia(5%) saturate(28%) hue-rotate(96deg) brightness(99%)
+    contrast(84%);
+}
+
+.content {
+  letter-spacing: 4px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input {
@@ -32,15 +51,20 @@
   font-size: 10px;
 }
 
+.result {
+  font-size: 15px;
+  margin-right: 15px;
+}
+
 .title {
   margin-top: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 .subtitle {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .respect {
@@ -61,4 +85,9 @@
 
 .consent {
   font-size: 20px;
+}
+
+.consentSec {
+  font-size: 20px;
+  margin-bottom: 50px;
 }
