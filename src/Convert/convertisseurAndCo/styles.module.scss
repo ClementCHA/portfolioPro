@@ -5,9 +5,13 @@
 .title {
   display: flex;
   justify-content: center;
-  margin: 0;
 }
 
 .converter {
   height: 100vh;
+  overflow: hidden;
+  background-image: url(./../../Calculator/Calculatrice/calculatorBackGround.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }

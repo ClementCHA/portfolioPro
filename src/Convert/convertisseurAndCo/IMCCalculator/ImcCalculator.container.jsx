@@ -16,6 +16,7 @@ const ImcCalculatorContainer = () => {
   };
 
   const calculateIMC = () => {
+    setSize("");
     setImcResult(weight / (size * size));
   };
 

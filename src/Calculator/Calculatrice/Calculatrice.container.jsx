@@ -102,6 +102,7 @@ const CalculatriceContainer = () => {
       case OPERATORVALUE.SUBSTRACTION:
         setFirstOperator(number);
         setNumber("");
+        setIsDecimal(!isDecimal);
         setExpression(number);
         setMathOperation(OPERATORVALUE.SUBSTRACTION);
         if (mathOperation.length > 0) {
@@ -110,6 +111,7 @@ const CalculatriceContainer = () => {
         break;
       //! Divide
       case OPERATORVALUE.DIVIDE:
+        setIsDecimal(!isDecimal);
         setFirstOperator(number);
         setNumber("");
         setExpression(number);
@@ -120,6 +122,7 @@ const CalculatriceContainer = () => {
         break;
       //! Multiply
       case OPERATORVALUE.MULTIPLY:
+        setIsDecimal(!isDecimal);
         setFirstOperator(number);
         setNumber("");
         setExpression(number);
@@ -137,6 +140,7 @@ const CalculatriceContainer = () => {
         break;
       //! Add
       case OPERATORVALUE.ADD:
+        setIsDecimal(!isDecimal);
         setFirstOperator(number);
         setNumber("");
         setExpression(number);

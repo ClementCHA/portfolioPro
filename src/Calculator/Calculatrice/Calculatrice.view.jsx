@@ -12,7 +12,7 @@ const CalculatriceView = ({
 }) => {
   return (
     <div className={styles.calculatorProject}>
-      <h1 className={styles.title}> My really original Calculator</h1>
+      <p className={styles.title}> My really original Calculator</p>
       <div className={styles.calculator}>
         <div className={styles.result}>{!expression ? number : expression}</div>
         <div className={styles.operators}>
@@ -20,6 +20,9 @@ const CalculatriceView = ({
             return (
               <div className={styles.buttonOperator}>
                 <button
+                  onKeyDown={(event) => {
+                    console.log(event);
+                  }}
                   key={operator.key}
                   value={operator.key}
                   onClick={operate}

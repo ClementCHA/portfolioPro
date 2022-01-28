@@ -37,10 +37,10 @@ const ConvertisseurView = ({
 
   return (
     <div className={styles.app}>
-      <h2 className={styles.subTitle}>
+      <p className={styles.subTitle}>
         Currency Converter{<Converter style={{ marginLeft: "10px" }} />}
-      </h2>
-      <h3 className={styles.h3}> (Base: Euro)</h3>
+      </p>
+      <p className={styles.base}> (Base: Euro)</p>
       <div className={styles.moneyConvert}>
         <TextField
           label="Montant"

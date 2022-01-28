@@ -18,7 +18,6 @@ const personalizeResult = (imcResult) => {
     case (imcResult < 18, 5):
       return UNDER_18_5;
     case (imcResult >= 18, 5 && imcResult < 25):
-      console.log("ta mere");
       return <p>{FROM_18_5_TO_25}</p>;
     case imcResult >= 25 && imcResult < 30:
       return <p>{FROM_25_TO_30}</p>;
@@ -43,17 +42,19 @@ const ImcCalculatorView = ({
 }) => {
   return (
     <div>
-      <h2 className={styles.subTitle}>
+      <p className={styles.subTitle}>
         {" "}
         BMI Calculator {<Weight style={{ marginLeft: "10px" }} />}{" "}
-      </h2>
+      </p>
       <ul>
-        <li>
+        <li className={styles.def}>
           The Body Mass Index, referred to more commonly as BMI, is a method
           used to calculate a person’s weight-related health risk.
         </li>
-        <li>Primarily, it takes into account a person’s height and weight.</li>
-        <li>
+        <li className={styles.def}>
+          Primarily, it takes into account a person’s height and weight.
+        </li>
+        <li className={styles.def}>
           Those who fall into higher BMI categories are likely to be at risk of
           developing diet-related diseases such as type-2 diabetes and heart
           disease.
@@ -61,23 +62,23 @@ const ImcCalculatorView = ({
       </ul>
       <div className={styles.imc}>
         <TextField
-          label="Poid (en KG)"
+          label="Weight (KG)"
           type="number"
           value={weight}
           onChange={onChangeWeight}
         />
         <TextField
-          label="Taille (en m)"
+          label="Size (metters)"
           type="number"
           value={size}
           onChange={onChangeSize}
         />
         <Button
           variant="contained"
-          disabled={!weight && !size}
+          disabled={weight.length === 0 || size.length === 0}
           onClick={calculateIMC}
         >
-          Calculer
+          Calculate
         </Button>{" "}
       </div>
       {imcResult && (

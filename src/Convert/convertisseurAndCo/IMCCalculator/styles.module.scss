@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 50px;
 }
 
 .imc {
@@ -9,14 +15,27 @@
   margin: 50px 30px 0px 30px;
   justify-content: space-evenly;
   align-items: center;
-  border: 2px solid gray;
-  border-radius: 15px;
+
+  background-color: white;
+  border-radius: 7px;
   padding: 20px;
+  border: 2px solid rgb(212, 211, 211);
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.349);
 }
 
 .result {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+
+  color: white;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+.def {
+  color: white;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-size: 15px;
 }
