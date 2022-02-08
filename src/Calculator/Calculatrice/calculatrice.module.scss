@@ -3,12 +3,18 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  justify-content: center;
 
-  background-image: url(./calculatorBackGround.jpg);
+  background-image: url(./../../images/lightBackGround.jpg);
 
   background-size: cover;
   background-repeat: no-repeat;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
 .title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -16,8 +22,21 @@
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 20px;
   font-size: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.title:after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #d2d7da;
+  width: 70%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  left: 50%;
 }
 .calculator {
   display: flex;

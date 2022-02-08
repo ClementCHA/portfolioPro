@@ -11,6 +11,10 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import Currency from "../SvgIcons/currencyConverter.svgIcons";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import CalculateIcon from "@mui/icons-material/Calculate";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SchoolIcon from "@mui/icons-material/School";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import style from "./style.module.scss";
 
@@ -75,67 +79,123 @@ const SlideMenu = () => {
       onOpen={handleOpen}
       onClose={handleClose}
     >
-      <NavLink to="/" className={style.menuBoutton} onClick={handleClose}>
-        <span className={style.menuBouttonContent}>
-          {" "}
-          <HomeIcon className={style.icon} />
-          Home
-        </span>
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className={style.menuBoutton}
-        onClick={handleClose}
-      >
-        <span className={style.menuBouttonContent}>
-          {" "}
-          <EmailIcon className={style.icon} />
-          Contact
-        </span>
-      </NavLink>
-      <div className={style.menuBoutton} onClick={handleClick}>
-        <span className={style.menuBouttonContent}>
-          {" "}
-          <FolderIcon className={style.icon} />
-          My Projects {isListOpen ? <ExpandLess /> : <ExpandMore />}
-        </span>
-      </div>
+      <div style={{ height: "50%", marginTop: "30px" }}>
+        <div className={style.bouttonHover}>
+          <NavLink to="/" onClick={handleClose} className={style.menuBoutton}>
+            <span className={style.menuBouttonContent}>
+              {" "}
+              <HomeIcon className={style.icon} />
+              Home
+            </span>
+          </NavLink>
+        </div>
 
-      <Collapse in={isListOpen} unmountOnExit>
-        <NavLink
-          to="/convertor"
-          className={style.menuBoutton}
-          onClick={handleClose}
-        >
-          <span className={style.subMenuBouttonContent}>
+        <div className={style.menuBoutton} onClick={handleClick}>
+          <span className={style.menuBouttonContent}>
             {" "}
-            <Currency className={style.icon} fontSize="medium" />
-            Convertor
+            <FolderIcon className={style.icon} />
+            My Projects {isListOpen ? <ExpandLess /> : <ExpandMore />}
           </span>
-        </NavLink>
-        <NavLink
-          to="/spotify"
-          className={style.menuBoutton}
-          onClick={handleClose}
+        </div>
+
+        <Collapse
+          in={isListOpen}
+          unmountOnExit
+          style={{ marginBottom: "30px" }}
         >
-          <span className={style.subMenuBouttonContent}>
-            {" "}
-            <MusicNoteIcon className={style.icon} />
-            Spotify
-          </span>
-        </NavLink>
-        <NavLink
-          to="/calculator"
-          className={style.menuBoutton}
-          onClick={handleClose}
-        >
-          <span className={style.subMenuBouttonContent}>
-            {" "}
-            <CalculateIcon className={style.icon} />
-            Calculator
-          </span>
-        </NavLink>
-      </Collapse>
+          <NavLink
+            to="/convertor"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.subMenuBouttonContent}>
+              {" "}
+              <Currency className={style.icon} fontSize="medium" />
+              Convertor
+            </span>
+          </NavLink>
+          <NavLink
+            to="/spotify"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.subMenuBouttonContent}>
+              {" "}
+              <MusicNoteIcon className={style.icon} />
+              Spotify
+            </span>
+          </NavLink>
+          <NavLink
+            to="/calculator"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.subMenuBouttonContent}>
+              {" "}
+              <CalculateIcon className={style.icon} />
+              Calculator
+            </span>
+          </NavLink>
+        </Collapse>
+        <div className={style.bouttonHover}>
+          <NavLink
+            to="/background"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.menuBouttonContent}>
+              {" "}
+              <SchoolIcon className={style.icon} />
+              Experiences
+            </span>
+          </NavLink>
+        </div>
+        <div className={style.bouttonHover}>
+          <NavLink
+            to="/contact"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.menuBouttonContent}>
+              {" "}
+              <EmailIcon className={style.icon} />
+              Contact
+            </span>
+          </NavLink>
+        </div>
+      </div>
+      <p
+        style={{
+          borderBottom: "1px white solid",
+          marginRight: "20px",
+          marginLeft: "20px",
+          marginTop: "10em",
+        }}
+      ></p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          marginTop: "4em",
+        }}
+      >
+        <TwitterIcon
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() =>
+            window.open("https://twitter.com/CHARLESClment9", "_blank")
+          }
+        />{" "}
+        <LinkedInIcon
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/clementchar/", "_blank")
+          }
+        />
+        <GitHubIcon
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() => window.open("https://github.com/ClementCHA", "_blank")}
+        />
+      </div>
     </Menu>
   );
 };

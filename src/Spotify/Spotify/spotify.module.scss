@@ -57,14 +57,27 @@
 }
 
 .title {
-  margin-top: 20px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+}
+
+.title:after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #d2d7da;
+  width: 70%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  left: 50%;
 }
 .subtitle {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .respect {

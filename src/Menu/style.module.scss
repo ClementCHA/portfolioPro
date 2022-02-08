@@ -4,26 +4,44 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: white;
-  padding: 20px 0px 20px 0px;
+
   cursor: pointer;
 }
+
 .menuBoutton:hover {
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.bouttonHover:hover {
   background-color: rgba(0, 0, 0, 0.329);
 }
 
 .menuBouttonContent {
   margin-left: 10px;
+  height: 3em;
   display: flex;
+  align-items: center;
   letter-spacing: 7px;
+  text-decoration: none;
+  padding: 3px;
 }
 
 .icon {
   margin-right: 20px;
 }
 
+.contactIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .listItem {
   display: flex;
   justify-content: center;
+}
+
+.separation {
+  border-bottom: 10px white solid;
 }
 
 .subMenuBouttonContent {

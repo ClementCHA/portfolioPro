@@ -1,3 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
 .subTitle {
   display: flex;
   align-items: center;
@@ -6,8 +14,20 @@
   margin-top: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 50px;
+  justify-self: center;
+  position: relative;
+}
+
+.subTitle:after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #d2d7da;
+  width: 70%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  left: 50%;
 }
 
 .imc {
@@ -15,7 +35,7 @@
   margin: 50px 30px 0px 30px;
   justify-content: space-evenly;
   align-items: center;
-
+  width: 90%;
   background-color: white;
   border-radius: 7px;
   padding: 20px;

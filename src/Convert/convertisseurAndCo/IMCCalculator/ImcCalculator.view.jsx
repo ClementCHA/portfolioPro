@@ -13,6 +13,7 @@ import {
 } from "./imcCalculator.constant";
 import Weight from "../../SVG/weight.svgIcons";
 import styles from "./styles.module.scss";
+
 const personalizeResult = (imcResult) => {
   switch (true) {
     case (imcResult < 18, 5):
@@ -41,7 +42,7 @@ const ImcCalculatorView = ({
   imcResult,
 }) => {
   return (
-    <div>
+    <div className={styles.app}>
       <p className={styles.subTitle}>
         {" "}
         BMI Calculator {<Weight style={{ marginLeft: "10px" }} />}{" "}

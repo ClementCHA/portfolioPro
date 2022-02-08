@@ -107,8 +107,8 @@ const SpotifyView = ({
       {!isLoading && (
         <div className={styles.spotifyApp}>
           <div className={styles.content}>
-            <h1 className={styles.title}> Spotify data analysis</h1>
-            <h2 className={styles.subtitle}>
+            <p className={styles.title}> Spotify data analysis</p>
+            <p className={styles.subtitle}>
               {" "}
               I listened to{" "}
               {
@@ -117,7 +117,7 @@ const SpotifyView = ({
                 </span>
               }{" "}
               of music in 2021.
-            </h2>
+            </p>
             <p className={styles.taunt}>
               {" "}
               (If you're wondering if I love listening to music, the answer is

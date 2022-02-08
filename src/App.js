@@ -8,6 +8,8 @@ import ContactFormContainer from "./ContactForm/ContactForm.container";
 import ConvertisseurAndCo from "./Convert/convertisseurAndCo";
 import Spotify from "./Spotify";
 import Calculator from "./Calculator";
+import BackGroundContainer from "./FormationAndExperiences";
+import NotFound from "./404";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/convertor" element={<ConvertisseurAndCo />} />
         <Route path="/spotify" element={<Spotify />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/background" element={<BackGroundContainer />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>
   );

@@ -23,8 +23,8 @@ const ContactForm = () => {
 
   return (
     <div className={style.formPage}>
+      <div className={style.title}>Let's work together !</div>
       <form onSubmit={handleSubmit} className={style.form}>
-        <div className={style.title}>Let's work together !</div>
         <div className={style.form__group}>
           <input
             type="input"
