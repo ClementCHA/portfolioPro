@@ -20,12 +20,12 @@ const MainPageView = () => {
             <span> &#123;</span>
             <p>
               &nbsp; &nbsp;
-              <span className={styles.presentationKey}>"Name"</span>:
+              <span className={styles.presentationKey}>"Lastname"</span>:
               <span className={styles.presentationValue}>"CHARLES",</span>
             </p>
             <p>
               &nbsp; &nbsp;
-              <span className={styles.presentationKey}>"Surname"</span>:
+              <span className={styles.presentationKey}>"Firstname"</span>:
               <span className={styles.presentationValue}>"Clément",</span>
             </p>
             <p>

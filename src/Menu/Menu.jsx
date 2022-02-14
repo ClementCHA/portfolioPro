@@ -50,6 +50,7 @@ const SlideMenu = () => {
       fontSize: "1.15em",
       letterSpacing: "10px",
       boxShadow: "5px 10px 25px black",
+      overflowY: "hidden",
     },
     bmMorphShape: {
       fill: "#373a47",
