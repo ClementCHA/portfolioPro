@@ -7,7 +7,6 @@ import ES6 from "./../images/es6.svg";
 import HTML from "./../images/html5.svg";
 import Javascript from "./../images/javascript.svg";
 import SASS from "./../images/sass.svg";
-import Github from "./../images/github.svg";
 
 import CV from "./EnglishCV.pdf";
 
