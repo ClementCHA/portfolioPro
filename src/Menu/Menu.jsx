@@ -147,7 +147,7 @@ const SlideMenu = () => {
             <span className={style.menuBouttonContent}>
               {" "}
               <SchoolIcon className={style.icon} />
-              Experiences
+              Curriculum Vitæ
             </span>
           </NavLink>
         </div>
@@ -180,22 +180,29 @@ const SlideMenu = () => {
           marginTop: "4em",
         }}
       >
-        <TwitterIcon
-          style={{ color: "white", cursor: "pointer" }}
-          onClick={() =>
-            window.open("https://twitter.com/CHARLESClment9", "_blank")
-          }
-        />{" "}
-        <LinkedInIcon
-          style={{ color: "white", cursor: "pointer" }}
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/clementchar/", "_blank")
-          }
-        />
-        <GitHubIcon
-          style={{ color: "white", cursor: "pointer" }}
-          onClick={() => window.open("https://github.com/ClementCHA", "_blank")}
-        />
+        <div className={style.logoTwitter}>
+          <TwitterIcon
+            //hover #00ACEE"
+            onClick={() =>
+              window.open("https://twitter.com/CHARLESClment9", "_blank")
+            }
+          />
+        </div>
+        <div className={style.logoLk}>
+          <LinkedInIcon
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/clementchar/", "_blank")
+            }
+          />
+        </div>
+        <div className={style.logoGithub}>
+          <GitHubIcon
+            style={{ color: "white", cursor: "pointer" }}
+            onClick={() =>
+              window.open("https://github.com/ClementCHA", "_blank")
+            }
+          />
+        </div>
       </div>
     </Menu>
   );

@@ -8,7 +8,7 @@ import HTML from "./../images/html5.svg";
 import Javascript from "./../images/javascript.svg";
 import SASS from "./../images/sass.svg";
 
-import CV from "./EnglishCV.pdf";
+import CV from "./Charles_Clement_CV.pdf";
 
 import CircleIcon from "@mui/icons-material/Circle";
 
@@ -39,7 +39,7 @@ const BackgroundView = () => {
               <p className={styles.traininStepsContent}>
                 {" "}
                 FullStack Javascript training, React JS specialization - 6
-                intensives months
+                intensive months
               </p>
               <p className={styles.trainingSteps}>
                 {" "}
@@ -106,12 +106,12 @@ const BackgroundView = () => {
               </p>
               <p className={styles.traininStepsContent}>
                 {" "}
-                Traine at Origins Digital - Biarritz
+                Trainee at Origins Digital - Biarritz
               </p>
               <p className={styles.traininStepsContent}>
                 {" "}
-                Front end developer working on back Office, creation of a
-                components' library
+                Front-end developer working on rewritting parts of an existing
+                back office and creating a component's library
               </p>
               <p className={styles.trainingSteps}>
                 {" "}
@@ -126,7 +126,7 @@ const BackgroundView = () => {
               </p>
               <p className={styles.traininStepsContent}>
                 {" "}
-                Moovie and TV Show Website.
+                Movies and TV Shows Website.
               </p>
 
               <p className={styles.trainingSteps}>

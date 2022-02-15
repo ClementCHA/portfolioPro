@@ -8,6 +8,33 @@
   cursor: pointer;
 }
 
+.logoTwitter {
+  color: white;
+  cursor: pointer;
+}
+.logoTwitter:hover {
+  color: #00acee !important;
+  transform: scale(1.5);
+}
+
+.logoLk {
+  color: white;
+  cursor: pointer;
+}
+
+.logoLk:hover {
+  color: #0474b3;
+  transform: scale(1.5);
+}
+
+.logoGithub {
+  color: white;
+  cursor: pointer;
+}
+.logoGithub:hover {
+  transform: scale(1.5);
+}
+
 .menuBoutton:hover {
   background-color: rgba(0, 0, 0, 0.329);
 }

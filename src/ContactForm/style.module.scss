@@ -152,3 +152,65 @@ $gray: #9b9b9b;
     box-shadow: none;
   }
 }
+
+.dialog_container {
+  /** border: dashed 2px pink; **/
+  width: 55vh;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.dialog_box {
+  position: relative;
+  min-height: 80px;
+  max-height: 180px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  height: 25px;
+  position: relative;
+  color: black;
+}
+
+.background_blur {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: -1;
+}
+
+.left {
+  float: left;
+  text-align: left;
+  width: content-max;
+  padding: 3px 0 0 10px;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  width: content-max;
+  padding: 3px 10px 0 0;
+}
+
+.contents {
+  z-index: 100;
+  position: inherit;
+  font-size: 0.8em;
+}
+
+.main_content {
+  padding: 8px 20px 10px 10px;
+  height: content-max;
+}
+
+.comment {
+  display: flex;
+}
