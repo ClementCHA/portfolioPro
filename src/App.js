@@ -9,6 +9,7 @@ import ConvertisseurAndCo from "./Convert/convertisseurAndCo";
 import Spotify from "./Spotify";
 import Calculator from "./Calculator";
 import BackGroundContainer from "./FormationAndExperiences";
+import Games from "./Game";
 import NotFound from "./404";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/spotify" element={<Spotify />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/background" element={<BackGroundContainer />} />
+        <Route path="/games" element={<Games />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>

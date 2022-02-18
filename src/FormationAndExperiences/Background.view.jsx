@@ -146,7 +146,7 @@ const BackgroundView = () => {
                 social Network communication, bank canvass
               </p>
             </div>
-            <div className={styles.logos}>
+            <div className={styles.cvButton}>
               {" "}
               <a
                 href={CV}

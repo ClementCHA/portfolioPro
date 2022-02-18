@@ -1,6 +1,8 @@
 import CurrencyConvertisseurContainer from "./CurrencyConverter";
 import ImcCalculatorContainer from "./IMCCalculator";
 
+import { FloatingButton } from "../../FloattingButton";
+
 import styles from "./styles.module.scss";
 
 const convertisseurAndCo = () => {
@@ -10,6 +12,7 @@ const convertisseurAndCo = () => {
         <CurrencyConvertisseurContainer />
       </div>
       <ImcCalculatorContainer />
+      <FloatingButton />
     </div>
   );
 };

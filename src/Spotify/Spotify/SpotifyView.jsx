@@ -4,6 +4,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Button from "@mui/material/Button";
+import { FloatingButton } from "../../FloattingButton";
 
 import Loader from "react-js-loader";
 
@@ -106,6 +107,7 @@ const SpotifyView = ({
       )}
       {!isLoading && (
         <div className={styles.spotifyApp}>
+          <FloatingButton />
           <div className={styles.content}>
             <p className={styles.title}> Spotify data analysis</p>
             <p className={styles.subtitle}>
@@ -215,7 +217,8 @@ const SpotifyView = ({
             )}
             {timeIListenThisSong === 0 && (
               <p className={styles.result}>
-                What the hell spotify? I never listened that song the past year.
+                What the hell Spotify? I never listened to that song in the past
+                year.
               </p>
             )}
           </div>

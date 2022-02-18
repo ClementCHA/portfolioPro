@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./calculatrice.module.scss";
+import { FloatingButton } from "../../FloattingButton";
 
 const CalculatriceView = ({
   saveNumber,
@@ -12,6 +13,7 @@ const CalculatriceView = ({
 }) => {
   return (
     <div className={styles.calculatorProject}>
+      <FloatingButton />
       <p className={styles.title}> My really original Calculator</p>
       <div className={styles.app}>
         <div className={styles.calculator}>

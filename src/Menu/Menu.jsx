@@ -8,6 +8,7 @@ import FolderIcon from "@mui/icons-material/Folder";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import Currency from "../SvgIcons/currencyConverter.svgIcons";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import CalculateIcon from "@mui/icons-material/Calculate";
@@ -135,6 +136,17 @@ const SlideMenu = () => {
               {" "}
               <CalculateIcon className={style.icon} />
               Calculator
+            </span>
+          </NavLink>
+          <NavLink
+            to="/games"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.subMenuBouttonContent}>
+              {" "}
+              <SportsEsportsIcon className={style.icon} fontSize="medium" />
+              Games
             </span>
           </NavLink>
         </Collapse>
