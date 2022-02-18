@@ -4,7 +4,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-import TicTacToe from "./TicTacToe";
+import TicTacToe from "./TicTacToe/morpion.jsx";
 import { FloatingButton } from "../FloattingButton";
 
 import styles from "./style.module.scss";
