@@ -1,0 +1,128 @@
+.colorCard {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.flash.flash {
+  border: 3px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.red {
+  border-top-right-radius: 50%;
+  background-color: red;
+  &.flash {
+    border-top-right-radius: 50%;
+    background-color: rgb(255, 125, 125);
+  }
+}
+
+.blue {
+  border-bottom-right-radius: 50%;
+  background-color: blue;
+  &.flash {
+    border-bottom-right-radius: 50%;
+    background-color: rgb(125, 125, 255);
+  }
+}
+
+.green {
+  border-top-left-radius: 50%;
+  background-color: green;
+  &.flash {
+    border-top-left-radius: 50%;
+    background-color: rgb(125, 255, 125);
+  }
+}
+
+.yellow {
+  background-color: yellow;
+  border-bottom-left-radius: 50%;
+  &.flash {
+    border-bottom-left-radius: 50%;
+    background-color: rgb(255, 255, 125);
+  }
+}
+
+.cardWrapper {
+  margin-top: 50px;
+  border-radius: 50%;
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 60px white;
+}
+
+.startButton {
+  margin-top: 50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 50%;
+  text-transform: uppercase;
+  background-color: white;
+  letter-spacing: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 60px black;
+}
+.inputWithLabel {
+  padding: 20px;
+}
+.score {
+  margin-top: 50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 50px;
+}
+.finalScore {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.inputRadio {
+  margin-top: 15px;
+  position: absolute;
+  top: 30%;
+  font-size: 10px;
+}
+
+.lost {
+  margin-top: 50px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+  line-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  flex-direction: column;
+  box-shadow: 0px 0px 15px white;
+}
+.closeButton {
+  margin-bottom: 40px;
+}
+.closeButtonContent {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}

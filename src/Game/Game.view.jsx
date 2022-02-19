@@ -4,7 +4,8 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-import TicTacToe from "../TicTacToe/morpion";
+import TicTacToe from "./TicTacToe/morpion";
+import SimonSay from "./SimonSay";
 import { FloatingButton } from "../FloattingButton";
 
 import styles from "./style.module.scss";
@@ -15,7 +16,6 @@ const GameView = () => {
   const handleTabChange = (event, newValue) => {
     setValue(newValue);
   };
-  console.log(value);
   return (
     <>
       <div className={styles.app}>
@@ -24,12 +24,12 @@ const GameView = () => {
         <Tabs
           value={value}
           onChange={handleTabChange}
-          textColor="inherit"
+          textColor="white"
           className={styles.tabulation}
         >
-          <Tab label="Tic-Tac-Toe" className={styles.tabs} />
-          <Tab label="Simon" className={styles.tabs} />
-          <Tab label="The hangman" className={styles.tabs} />
+          <Tab label={<span className={styles.tabs}>Tic-Tac-Toe</span>} />
+          <Tab label={<span className={styles.tabs}>Simon says</span>} />
+          <Tab label={<span className={styles.tabs}>Hang-Man</span>} />
         </Tabs>
         <div className={styles.gameContent}>
           {value === null && (
@@ -39,6 +39,7 @@ const GameView = () => {
             </>
           )}
           {value === 0 && <TicTacToe />}
+          {value === 1 && <SimonSay />}
         </div>
         <FloatingButton />
       </div>
