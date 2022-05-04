@@ -10,6 +10,7 @@ import Spotify from "./Spotify";
 import Calculator from "./Calculator";
 import BackGroundContainer from "./FormationAndExperiences";
 import Games from "./Game";
+import SudocuteContainer from "./Sudocute";
 import NotFound from "./404";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/background" element={<BackGroundContainer />} />
         <Route path="/games" element={<Games />} />
+        <Route path="/sudocute" element={<SudocuteContainer />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>

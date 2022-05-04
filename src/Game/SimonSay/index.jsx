@@ -8,7 +8,7 @@ import FormControl from "@mui/material/FormControl";
 import ColorCard from "./colorCard";
 import timeout from "./util";
 
-function App() {
+const App = () => {
   const [isOn, setIsOn] = useState(false);
 
   const colorList = ["green", "red", "yellow", "blue"];
@@ -176,6 +176,7 @@ function App() {
         {colorList &&
           colorList.map((v, i) => (
             <ColorCard
+              key={i}
               onClick={() => {
                 cardClickHandle(v);
               }}
@@ -205,6 +206,6 @@ function App() {
       )}
     </>
   );
-}
+};
 
 export default App;

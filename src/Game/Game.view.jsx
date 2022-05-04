@@ -6,6 +6,7 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 import TicTacToe from "./TicTacToe/morpion";
 import SimonSay from "./SimonSay";
+import HangMan from "./HangMan";
 import { FloatingButton } from "../FloattingButton";
 
 import styles from "./style.module.scss";
@@ -40,6 +41,7 @@ const GameView = () => {
           )}
           {value === 0 && <TicTacToe />}
           {value === 1 && <SimonSay />}
+          {value === 2 && <HangMan />}
         </div>
         <FloatingButton />
       </div>

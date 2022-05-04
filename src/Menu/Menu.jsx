@@ -10,6 +10,7 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import Currency from "../SvgIcons/currencyConverter.svgIcons";
+import Sudoku from "../SvgIcons/sudoku.svgIcons";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -136,6 +137,17 @@ const SlideMenu = () => {
               {" "}
               <CalculateIcon className={style.icon} />
               Calculator
+            </span>
+          </NavLink>
+          <NavLink
+            to="/sudocute"
+            className={style.menuBoutton}
+            onClick={handleClose}
+          >
+            <span className={style.subMenuBouttonContent}>
+              {" "}
+              <Sudoku className={style.icon} />
+              Sudoku
             </span>
           </NavLink>
           <NavLink
