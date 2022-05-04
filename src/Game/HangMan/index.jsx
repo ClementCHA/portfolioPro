@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Letters } from "./util.js";
 
@@ -9,7 +9,7 @@ const HangMan = () => {
   const [randomWord, setRandomWord] = useState("");
   const [nbOfMistake, setNbOfMistake] = useState(0);
   const [render, setRender] = useState(0);
-  const [result, setResult] = useState("");
+  //const [result, setResult] = useState("");
   const [alphabet, setAlphabet] = useState(Letters);
 
   const startPlaying = () => {
@@ -17,7 +17,7 @@ const HangMan = () => {
     setRandomWord(rdmWords(1)[0].toUpperCase());
   };
 
-  const clickOnLetter = useCallback((l) => {
+  const clickOnLetter = (l) => {
     const letterValue = l?.key.toUpperCase();
     const index = alphabet.indexOf(
       alphabet.filter((e) => e?.key === letterValue)[0]
@@ -35,7 +35,7 @@ const HangMan = () => {
     } else {
       setNbOfMistake(nbOfMistake + 1);
     }
-  });
+  };
 
   useEffect(() => {
     document.addEventListener("keydown", clickOnLetter);
