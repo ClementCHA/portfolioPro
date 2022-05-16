@@ -68,6 +68,8 @@ const HangMan = () => {
               </div>
             ))}
           </div>
+
+          <div className="wip"> 🛠 WORK IN PROGRESS 🛠 </div>
         </div>
       )}
     </>

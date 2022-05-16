@@ -7,12 +7,14 @@ const MainPageView = () => {
     <div>
       <div className={styles.presentation}>
         <div className={styles.presentationBlock}>
-          <p>
-            Front-End Developer <br /> &nbsp;JavaScript - React
-          </p>
-          <a href="/contact" className={styles.contactMe}>
-            Contact me
-          </a>
+          <div className={styles.content}>
+            <p style={{ marginBottom: "3em" }}>
+              Front-End Developer <br /> &nbsp;JavaScript - React
+            </p>
+            <a href="/contact" className={styles.contactMe}>
+              Contact me
+            </a>
+          </div>
         </div>
 
         <pre className={styles.presentationBlock}>

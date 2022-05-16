@@ -31,6 +31,7 @@ const SlideMenu = () => {
     },
     bmBurgerBars: {
       background: "#cfcfcf",
+      width: "1.7em",
     },
     bmBurgerBarsHover: {
       background: "#a90000",

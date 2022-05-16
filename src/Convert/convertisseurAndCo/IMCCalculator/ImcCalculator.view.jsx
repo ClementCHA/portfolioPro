@@ -63,12 +63,14 @@ const ImcCalculatorView = ({
       </ul>
       <div className={styles.imc}>
         <TextField
+          style={{ marginRight: "20px" }}
           label="Weight (KG)"
           type="number"
           value={weight}
           onChange={onChangeWeight}
         />
         <TextField
+          style={{ marginRight: "20px" }}
           label="Size (metters)"
           type="number"
           value={size}
@@ -78,6 +80,7 @@ const ImcCalculatorView = ({
           variant="contained"
           disabled={weight.length === 0 || size.length === 0}
           onClick={calculateIMC}
+          style={{ fontSize: "0.6em" }}
         >
           Calculate
         </Button>{" "}

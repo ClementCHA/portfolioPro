@@ -2,16 +2,22 @@
   margin-bottom: 70px;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
+
+@media only screen and (min-width: 1000px) {
+  .converter {
+    background-image: url(./../../images/lightBackGround.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
-.converter {
-  height: 100vh;
-  overflow: hidden;
-  background-image: url(./../../images/lightBackGround.jpg);
-
-  background-size: cover;
-  background-repeat: no-repeat;
+@media only screen and (max-width: 800px) {
+  .converter{
+    height: 100vh;
+    background-color: rgba(28, 27, 27, 0.97);
+  }
 }
+
+
+

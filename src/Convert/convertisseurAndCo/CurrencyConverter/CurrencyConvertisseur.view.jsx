@@ -9,8 +9,6 @@ import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import InputAdornment from "@mui/material/InputAdornment";
 import Proptypes from "prop-types";
 
-import Converter from "../../SVG/currencyConverter.svgIcons";
-
 import styles from "./styles.module.scss";
 
 const ConvertisseurView = ({
@@ -37,9 +35,7 @@ const ConvertisseurView = ({
 
   return (
     <div className={styles.app}>
-      <p className={styles.subTitle}>
-        Currency Converter{<Converter style={{ marginLeft: "10px" }} />}
-      </p>
+      <p className={styles.subTitle}>Currency Converter</p>
       <p className={styles.base}> (Base: Euro)</p>
       <div className={styles.moneyConvert}>
         <TextField

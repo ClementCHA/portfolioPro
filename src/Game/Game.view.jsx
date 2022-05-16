@@ -27,6 +27,14 @@ const GameView = () => {
           onChange={handleTabChange}
           textColor="white"
           className={styles.tabulation}
+          indicatorColor="none"
+          TabIndicatorProps={{ style: { textDecoration: "none" } }}
+          sx={{
+            "& .MuiTabs-flexContainer": {
+              flexWrap: "wrap",
+              justifyContent: "center",
+            },
+          }}
         >
           <Tab label={<span className={styles.tabs}>Tic-Tac-Toe</span>} />
           <Tab label={<span className={styles.tabs}>Simon says</span>} />

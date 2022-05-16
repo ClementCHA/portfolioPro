@@ -3,9 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-
   background-image: url(./../../images/lightBackGround.jpg);
-
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -27,17 +25,22 @@
   font-size: 20px;
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
-.title:after {
-  position: absolute;
-  content: "";
-  border-bottom: 1px solid #d2d7da;
-  width: 70%;
-  transform: translateX(-50%);
-  bottom: -15px;
-  left: 50%;
+@media only screen and (min-width: 800px) {
+  .title:after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #d2d7da;
+    width: 70%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    left: 50%;
+  }
 }
+
+
 .calculator {
   display: flex;
   flex-direction: column;
@@ -45,8 +48,8 @@
   background-color: #ffffffc4;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
-  height: 440px;
-  width: 340px;
+  height: 30em;
+  width: 20em;
   box-shadow: 10px 10px 10px rgb(102, 102, 102);
 }
 

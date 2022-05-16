@@ -16,23 +16,24 @@
 
 .iframe{
   box-shadow: 4px 4px 10px 10px rgb(255 255 255 / 35%);
+height: 80vh;
+display: flex;
+width: 80vw;
 
-  width: 50em;
-  height: 30em;
 }
 
 .iframeContainer{
-  height: 100em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 2em;
 }
+
+
 
 .title{
   letter-spacing: 2px;
   text-align: center;
   font-size: 2em;
   cursor: pointer;
+  
 }
 
 .title:hover{

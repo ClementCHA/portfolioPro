@@ -1,23 +1,140 @@
+@media only screen and (min-width: 800px) {
+  .position {
+    top: 40vh;
+    position: absolute;
+    right: 2.5vh;
+  }
+  
+  .position1 {
+    top: 30vh;
+    position: absolute;
+    right: 4vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  
+  
+  .position2 {
+    top: 33vh;
+    position: absolute;
+    right: 10vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position3 {
+    top: 39vh;
+    position: absolute;
+    right: 12vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position4 {
+    top: 45.5vh;
+    position: absolute;
+    right: 10vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position5 {
+    top: 50vh;
+    position: absolute;
+    right: 4vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .position {
+    top: 17vh;
+    position: absolute;
+    right: 2.5vh;
+  }
+  
+  .position1 {
+    top: 8vh;
+    position: absolute;
+    right: 4vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  
+  
+  .position2 {
+    top: 11vh;
+    position: absolute;
+    right: 10vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position3 {
+    top: 17vh;
+    position: absolute;
+    right: 12vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position4 {
+    top: 23vh;
+    position: absolute;
+    right: 10vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .position5 {
+    top: 27vh;
+    position: absolute;
+    right: 4vh;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+}
+
+
+
 .circleMenu {
   background: white;
 }
 
-.position {
-  top: 40vh;
-  position: absolute;
-  right: 2.5vh;
+
+.position:hover {
+  transform: scale(1.2);
 }
 
-.position1 {
-  top: 30vh;
-  position: absolute;
-  right: 4vh;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
+.logo {
+  width: 90%;
 }
+
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
@@ -25,52 +142,4 @@
   100% {
     opacity: 1;
   }
-}
-
-.position2 {
-  top: 33vh;
-  position: absolute;
-  right: 10vh;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-.position3 {
-  top: 39vh;
-  position: absolute;
-  right: 12vh;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-.position4 {
-  top: 45.5vh;
-  position: absolute;
-  right: 10vh;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-.position5 {
-  top: 50vh;
-  position: absolute;
-  right: 4vh;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-}
-.position:hover {
-  transform: scale(1.2);
-}
-
-.logo {
-  width: 90%;
 }
