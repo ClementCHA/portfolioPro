@@ -56,16 +56,12 @@ const MainPageView = () => {
             <p>
               &nbsp; &nbsp;&nbsp; &nbsp;
               <span className={styles.presentationKey}>"Github"</span>:
-              <span className={styles.presentationValue}>
-                "github.com/ClementCHA",
-              </span>
+              <span className={styles.presentationValue}>"ClementCHA",</span>
             </p>
             <p>
               &nbsp; &nbsp;&nbsp; &nbsp;
               <span className={styles.presentationKey}>"Linkedin"</span>:
-              <span className={styles.presentationValue}>
-                "linkedin.com/in/clementCHAR/"
-              </span>
+              <span className={styles.presentationValue}>"clementCHAR"</span>
             </p>
             <p>&nbsp; &nbsp; &#125;,</p>
             <p>
