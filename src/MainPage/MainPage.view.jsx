@@ -97,7 +97,7 @@ const MainPageView = () => {
             <p>
               &nbsp; &nbsp;&nbsp; &nbsp;
               <span className={styles.presentationKey}>"React.js"</span>:
-              <span className={styles.presentationValue}>"17.0.2",</span>
+              <span className={styles.presentationValue}>"18.0",</span>
             </p>
             <p>
               &nbsp; &nbsp;&nbsp; &nbsp;
