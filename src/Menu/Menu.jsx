@@ -209,7 +209,7 @@ const SlideMenu = () => {
           <TwitterIcon
             //hover #00ACEE"
             onClick={() =>
-              window.open("https://twitter.com/CHARLESClment9", "_blank")
+              window.open("https://twitter.com/Cle_char", "_blank")
             }
           />
         </div>
